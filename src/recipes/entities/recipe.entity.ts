@@ -23,6 +23,6 @@ export class Recipe {
   @Column('varchar', { array: true })
   ingredients: string[];
 
-  @Column('varchar')
+  @Column({ nullable: true, type: 'varchar' })
   imageUrl: string;
 }
